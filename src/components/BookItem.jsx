@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/BookItem.css";
 
-const BookItem = ({ title, author, published, date, picture }) => {
+const BookItem = ({ title, author, published, date, picture, id }) => {
   return (
-    <div className="book-item">
+    <div className="book-item" key={id}>
       <img src={picture} alt="check here" />
       <p>{title}</p>
       <p>{author}</p>
