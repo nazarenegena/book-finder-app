@@ -1,8 +1,9 @@
 import React from "react";
-import SearchInput from "./SearchInput";
+import SearchInput from "../components/SearchInput";
 import "../styles/Search.css";
 import { useState } from "react";
-import Books from "./Books";
+import Books from "../components/Books";
+import { FaBookOpenReader } from "react-icons/fa6";
 
 const Search = () => {
   const [books, setBooks] = useState([]);
@@ -11,6 +12,9 @@ const Search = () => {
 
   return (
     <div className="search">
+      <p className="page-title">
+        PagePal <FaBookOpenReader fill={"#28636c"} className="title-icon" />{" "}
+      </p>
       <SearchInput
         books={books}
         setBooks={setBooks}

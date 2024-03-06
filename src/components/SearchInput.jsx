@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/SearchInput.css";
-
+import { FaSearch } from "react-icons/fa";
 const SearchInput = ({
   books,
   setBooks,
@@ -30,17 +30,20 @@ const SearchInput = ({
     <div className="search-input">
       <input
         type="text"
-        placeholder="search book"
+        placeholder="Type author, book ..."
         name="search"
         value={bookValue}
         onChange={(event) => {
           setBookValue(event.target.value);
         }}
       />
-
-      <button className="" onClick={handleSearch}>
-        Search
-      </button>
+      <FaSearch
+        className="search-btn"
+        onClick={handleSearch}
+        size={20}
+        fill={"#28636c"}
+        fontWeight={"bold"}
+      />{" "}
     </div>
   );
 };

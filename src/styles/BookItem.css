@@ -12,10 +12,10 @@ background-color: white;
 
 .pic {
     width: 200px;
-  height: 300px;
   object-fit: cover;
   margin-right: 30px;
-  box-shadow: 0px 5px 12px -3px rgba(17, 17, 17, 0.959);
+    box-shadow: 0px 5px 12px -3px rgba(165, 163, 163, 0.959);
+
 
 }
 
