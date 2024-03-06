@@ -7,6 +7,7 @@ import Books from "./Books";
 const Search = () => {
   const [books, setBooks] = useState([]);
   const [bookValue, setBookValue] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
     <div className="search">
@@ -15,9 +16,9 @@ const Search = () => {
         setBooks={setBooks}
         bookValue={bookValue}
         setBookValue={setBookValue}
+        setLoading={setIsLoading}
       />
-
-      <Books books={books} />
+      <Books books={books} isLoading={isLoading} />
     </div>
   );
 };
