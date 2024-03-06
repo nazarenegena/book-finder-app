@@ -1,4 +1,43 @@
 .book-item {
     display: flex;
-    background-color: rgb(230, 230, 230);
+box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+margin-top: 20px;
+margin-bottom: 20px;
+height: 20rem;
+width: 30rem;
+border: 1px solid rgba(128, 128, 128, 0.1);
+border-radius: 10px;
+background-color: white;
+}
+
+.pic {
+    width: 200px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.pair-details {
+    margin-bottom: 20px;
+}
+
+.book-description {
+    margin-top: 2rem;
+}
+.title {
+font-size: 1.2rem;
+font-weight: 600;
+color: rgb(83, 46, 46);
+
+/* color: rgb(43, 43, 43); */
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin-bottom: 30px;
+}
+
+.span-1 {
+color: rgb(83, 46, 46);
+}
+
+.span-2{
+    color: rgb(19, 19, 87);
 }

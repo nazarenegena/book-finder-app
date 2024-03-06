@@ -1,6 +1,7 @@
 
 .App {
-    height: 100vh;
    margin: auto;
    padding: 0;
+background-color: rgba(179, 177, 177, 0.1);
+
 }
