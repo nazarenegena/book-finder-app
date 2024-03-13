@@ -10,9 +10,10 @@ const Books = ({ books, isLoading }) => {
         <Loading />
       ) : (
         <div className="books">
-          {books.slice(0, 30).map((book) => (
+          {books.slice(0, 30).map((book, index) => (
             <BookItem
-              key={book.key}
+              key={`${book.key}-${index}`}
+              id={book.cover_edition_key}
               title={book.title}
               author={book.author_name}
               published={book.first_publish_year}

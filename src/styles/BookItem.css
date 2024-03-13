@@ -30,8 +30,6 @@ background-color: white;
 font-size: 1.2rem;
 font-weight: 600;
 color: rgb(83, 46, 46);
-
-/* color: rgb(43, 43, 43); */
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 margin-bottom: 30px;
 }
@@ -42,4 +40,27 @@ color: rgb(83, 46, 46);
 
 .span-2{
     color: rgb(19, 19, 87);
+}
+
+.view-more {
+
+     border: 2px solid #f5497d;
+        box-shadow: 0px 5px 12px -3px rgba(165, 163, 163, 0.959);
+border-radius: 8px;
+    cursor: pointer;
+    width: 8rem;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(36, 36, 36);
+}
+
+.view-more:hover{
+        background-color:#f5497d;
+        color: white;
+
 }

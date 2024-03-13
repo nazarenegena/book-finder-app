@@ -1,13 +1,8 @@
 import React from "react";
 import "../styles/SearchInput.css";
 import { FaSearch } from "react-icons/fa";
-const SearchInput = ({
-  books,
-  setBooks,
-  bookValue,
-  setBookValue,
-  setLoading,
-}) => {
+
+const SearchInput = ({ setBooks, bookValue, setBookValue, setLoading }) => {
   const handleSearch = (event) => {
     event.preventDefault();
     const fetchBooks = async () => {
@@ -22,7 +17,6 @@ const SearchInput = ({
       setLoading(false);
     };
     fetchBooks();
-    console.log("the search");
     setBookValue("");
   };
 

@@ -1,20 +1,24 @@
 import React from "react";
 import SearchInput from "../components/SearchInput";
 import "../styles/Search.css";
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import Books from "../components/Books";
 import { FaBookOpenReader } from "react-icons/fa6";
 
-const Search = () => {
-  const [books, setBooks] = useState([]);
-  const [bookValue, setBookValue] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-
+const Search = ({
+  books,
+  setBooks,
+  bookValue,
+  setBookValue,
+  isLoading,
+  setIsLoading,
+}) => {
   return (
     <div className="search">
-      <p className="page-title">
+      <Link to={"/"} className="page-title">
         PagePal <FaBookOpenReader fill={"#28636c"} className="title-icon" />{" "}
-      </p>
+      </Link>
+
       <SearchInput
         books={books}
         setBooks={setBooks}

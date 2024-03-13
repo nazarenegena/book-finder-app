@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/BookItem.css";
+import { Link } from "react-router-dom";
 
 const BookItem = ({ title, author, published, rating, picture, id }) => {
   return (
@@ -20,6 +21,10 @@ const BookItem = ({ title, author, published, rating, picture, id }) => {
           <span className="span-1">Rating :</span>
           <span className="span-2">{rating}</span>
         </div>
+
+        <Link to={`/details/${id}`} className="view-more">
+          View More
+        </Link>
       </div>
     </div>
   );
